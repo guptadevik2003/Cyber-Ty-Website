@@ -1,0 +1,38 @@
+{
+  "name": "cyberty.mapleclub.top",
+  "version": "1.0.0",
+  "engines": {
+    "node": "17.x"
+  },
+  "description": "https://cyberty.mapleclub.top",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guptadevik2003/cyberty.mapleclub.top.git"
+  },
+  "author": "Devik_NotFound#2695",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guptadevik2003/cyberty.mapleclub.top/issues"
+  },
+  "homepage": "https://github.com/guptadevik2003/cyberty.mapleclub.top#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^14.3.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.1.8",
+    "node": "^17.4.0",
+    "node-fetch": "^2.6.6"
+  }
+}
