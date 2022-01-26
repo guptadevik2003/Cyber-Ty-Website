@@ -78,7 +78,7 @@
     }
 }
 
-/* Laptop Devices */
+/* Tablet Devices */
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .navbar_section .navbar-nav{
         margin-top: 10px;

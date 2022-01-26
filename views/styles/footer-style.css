@@ -1,0 +1,10 @@
+/* Footer Section For All Pages */
+
+.footer_section{
+    width: 100%;
+    text-align: center;
+    color: var(--text-grey);
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 20px;
+}

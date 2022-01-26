@@ -26,15 +26,247 @@ body{
     min-height: calc(100vh - 64px);
 }
 
+.hero_section .first_part{
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero_section .first_part .main_container{
+    width: 500px;
+    padding-left: 20px;
+}
+
+.hero_section .first_part .main_container h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero_section .first_part .main_container p{
+    color: var(--text-grey);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.hero_section .first_part .main_container span{
+    word-spacing: 6px;
+}
+
+.hero_section .first_part .hero_btn{
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.hero_section .first_part .btn1{
+    border: 1px solid var(--button-high);
+    background: var(--button-high);
+    margin-right: 20px;
+}
+.hero_section .first_part .btn2{
+    border: 1px solid var(--text-grey);
+    background: var(--text-grey);
+}
+.hero_section .first_part .hero_btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.hero_section .second_part{
+    margin: 0px 75px;
+}
+
+.hero_section .second_part .info_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+
+.hero_section .second_part .info_container .info_text{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero_section .second_part .info_container .info_text h3{
+    color: white;
+}
+.hero_section .second_part .info_container .info_text h5{
+    margin-top: 16px;
+    line-height: 30px;
+    color: var(--text-grey);
+}
+
+.hero_section .second_part .info_container .info_img{
+    width: 500px;
+}
+.hero_section .second_part .info_container .info_img img{
+    border-radius: 7px;
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.15);
+    width: 500px;
+}
+
 
 
 /* ============ Media Queries Starts From This Part Now ============ */
 /* Mobile Devices */
 @media screen and (min-width: 0px) and (max-width: 425px) {
-    
+    .hero_section .first_part{
+        flex-direction: column;
+    }
+    .hero_section .first_part .main_container{
+        padding: unset;
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_section .first_part .main_image img{
+        width: 100%;
+    }
+    .hero_section .second_part{
+        margin: unset;
+    }
+    .hero_section .second_part .info_container{
+        flex-direction: column;
+    }
+    .hero_section .second_part .reverse{
+        flex-direction: column-reverse;
+    }
+    .hero_section .second_part .info_container .info_text{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_text h5{
+        margin-top: unset;
+        margin-bottom: 10px;
+        line-height: unset;
+        font-size: 13px;
+    }
+    .hero_section .second_part .info_container .info_img{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_img img{
+        width: 100%;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .hero_section .first_part{
+        flex-direction: column;
+    }
+    .hero_section .first_part .main_container{
+        padding: unset;
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_section .first_part .main_image img{
+        width: 100%;
+    }
+    .hero_section .second_part{
+        margin: unset;
+    }
+    .hero_section .second_part .info_container{
+        flex-direction: column;
+    }
+    .hero_section .second_part .reverse{
+        flex-direction: column-reverse;
+    }
+    .hero_section .second_part .info_container .info_text{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_text h5{
+        margin-top: unset;
+        margin-bottom: 10px;
+        line-height: unset;
+        font-size: 17px;
+    }
+    .hero_section .second_part .info_container .info_img{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_img img{
+        width: 100%;
+    }
 }
 
 /* Laptop Devices */
-@media screen and (min-width: 426px) and (max-width: 768px) {
-    
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero_section .first_part{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_section .first_part .main_container{
+        padding: unset;
+        width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_section .first_part .main_image{
+        width: 69%;
+    }
+    .hero_section .first_part .main_image img{
+        width: 100%;
+    }
+    .hero_section .second_part{
+        margin: unset;
+    }
+    .hero_section .second_part .info_container{
+        flex-direction: column;
+    }
+    .hero_section .second_part .reverse{
+        flex-direction: column-reverse;
+    }
+    .hero_section .second_part .info_container .info_text{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_text h5{
+        margin-top: unset;
+        margin-bottom: 10px;
+        line-height: unset;
+        font-size: 17px;
+    }
+    .hero_section .second_part .info_container .info_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero_section .second_part .info_container .info_img img{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .hero_section .second_part .info_container .info_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero_section .second_part .info_container .info_img img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .hero_section .first_part .main_image{
+        width: 69%;
+    }
+    .hero_section .first_part .main_image img{
+        width: 100%;
+    }
+    .hero_section .second_part .info_container .info_img{
+        width: 50%;
+        background-color: chocolate;
+    }
+    .hero_section .second_part .info_container .info_img img{
+        width: 100%;
+    }
 }
