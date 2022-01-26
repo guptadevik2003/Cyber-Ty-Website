@@ -1,0 +1,89 @@
+/* Navbar Section Style For All Pages */
+
+#active-tab{
+    color: var(--text-high) !important;
+}
+
+.navbar_section{
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+.navbar_section .navbar-brand{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.navbar_section .navbar-brand span{
+    color: var(--text-high);
+}
+
+.navbar_section .navbar-brand img{
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+}
+
+.navbar_section .navbar-toggler{
+    font-size: 25px;
+    box-shadow: none !important;
+    border: none;
+}
+
+.navbar_section .navbar-toggler .fa-times{
+    font-size: 29px;
+    display: none;
+}
+
+.navbar_section .navbar-nav li a{
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2px 0px 0px 6px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.navbar_section .navbar-nav li a:hover{
+    color: var(--text-high) !important;
+    background: none;
+}
+
+.navbar_section .navbar-nav li .dropdown-toggle:focus{
+    color: var(--text-high) !important;
+}
+
+.navbar_section .navbar-nav li .dropdown-menu{
+    background: var(--background-color) !important;
+    border: none;
+    text-align: center;
+}
+
+.navbar_section .navbar-nav li .dropdown-menu .dropdown-item{
+    margin: 0px 0px 8px 0px;
+}
+
+
+
+/* ============ Media Queries Starts From This Part Now ============ */
+/* Mobile Devices */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    .navbar_section .navbar-nav{
+        margin-top: 10px;
+    }
+    .navbar_section .navbar-nav a{
+        text-align: center;
+    }
+}
+
+/* Laptop Devices */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .navbar_section .navbar-nav{
+        margin-top: 10px;
+    }
+    .navbar_section .navbar-nav a{
+        text-align: center;
+    }
+}

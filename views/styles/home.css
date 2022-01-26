@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --arc-io-purple: #7b4dff;
+
+    --background-color: #090a0c;
+    --background-color-high: #12151b;
+
+    --text-high: #22c55e;
+    --text-grey: #63707f;
+
+    --button-high: #1eb154;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--background-color) !important;
+}
+
+/* Hero Section */
+.hero_section{
+    margin-top: 64px;
+    min-height: calc(100vh - 64px);
+}
+
+
+
+/* ============ Media Queries Starts From This Part Now ============ */
+/* Mobile Devices */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    
+}
+
+/* Laptop Devices */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+}

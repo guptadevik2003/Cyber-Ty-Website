@@ -11,6 +11,11 @@ router.get('/supportserver', async (req, res) => {
     res.redirect(`https://discord.gg/XUwgs6vp36`)
 })
 
+// /topgg
+router.get('/topgg', async (req, res) => {
+    res.redirect(`https://top.gg/bot/919212093444616203`)
+})
+
 // /arc-sw.js
 router.get('/arc-sw.js', async (req, res) => {
     res.sendFile(`${process.cwd()}/views/arc-sw.js`)
@@ -54,6 +59,11 @@ router.get('/assets', async (req, res) => {
 // /status
 router.get('/status', async (req, res) => {
     res.render('status.ejs')
+})
+
+// /commands
+router.get('/commands', async (req, res) => {
+    res.render('commands.ejs')
 })
 
 module.exports = router
