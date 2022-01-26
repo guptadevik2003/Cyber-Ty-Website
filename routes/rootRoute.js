@@ -66,4 +66,9 @@ router.get('/commands', async (req, res) => {
     res.render('commands.ejs')
 })
 
+// /device-width
+router.get('/device-width', async (req, res) => {
+    res.render('device-width.ejs')
+})
+
 module.exports = router
