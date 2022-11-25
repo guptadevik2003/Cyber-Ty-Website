@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --arc-io-purple: #7b4dff;
+    --backg-color: #090a0c;
+    --text-green: #22c55e;
+    --text-grey: #63707f;
+    --button-green: #1eb154;
+    --button-grey: #12151b;
+
+    --gradient-1: linear-gradient(230deg, #759bff, #843cf6);
+    --gradient-2: linear-gradient(230deg, #fc5286, #fbaaa2);
+    --gradient-3: linear-gradient(230deg, #ffc480, #ff763b);
+    --gradient-4: linear-gradient(230deg, #0e4cfd, #6a8eff);
+
+    --card-shadow: 2px 2px 6px 0px rgba(0,0,0,0.15);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--backg-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+    margin: 0 !important;
+}
+
+.hero_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.main-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-info-container p{
+    color: var(--text-grey);
+    font-weight: 500;
+}
+
+.name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container img{
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.name-container h2{
+    color: white;
+}
+
+.card-container-1{
+    display: flex;
+}
+
+.card-base{
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.card-1{
+    width: 580px;
+    height: 200px;
+    margin: 10px;
+    background-image: var(--gradient-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-2{
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    background-image: var(--gradient-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-3{
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    background-image: var(--gradient-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-heading{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+}
+.main-heading{
+    font-size: 35px;
+    font-weight: 500;
+}
+.bottom-heading{
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+}
+.ping-heading{
+    font-size: 21px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+}
+.percent-heading{
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+}
+
+svg{
+    position: relative;
+    width: 169px;
+    height: 179px;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: rgba(0,0,0,0.1);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(24px, 15px);
+    transition: 2s;
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 375;
+    stroke-dashoffset: calc(375 - (375 / 100 * 0));
+}
+.meter-svg:nth-child(1) svg circle:nth-child(2){
+    stroke: rgba(215,67,41,0.95);
+}
+
+.number{
+    position: absolute;
+    top: 35%;
+    font-size: 27px;
+}
+
+.start-stop-button{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #f26b8a;
+    padding: 8px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+.watchbot-button{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #f26b8a;
+    padding: 8px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        min-height: 90vh;
+    }
+    .card-1{
+        width: 360px;
+        height: 180px;
+    }
+    .card-2{
+        width: 170px;
+        height: 180px;
+    }
+    .card-3{
+        width: 170px;
+        height: 180px;
+    }
+}
